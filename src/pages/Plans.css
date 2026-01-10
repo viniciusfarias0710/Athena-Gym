@@ -1,0 +1,173 @@
+.plans {
+  background-color: var(--light-gray);
+}
+
+.plans-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.plans-header h2 {
+  margin-bottom: 16px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px;
+  text-align: center;
+}
+
+.plan-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.6em;
+}
+
+.plan-description {
+  margin-bottom: 24px;
+  font-size: 0.95em;
+  color: var(--text-light);
+}
+
+.plan-price {
+  margin-bottom: 32px;
+  font-size: 2.4em;
+}
+
+.currency {
+  color: var(--accent-orange);
+  font-size: 0.7em;
+  vertical-align: super;
+}
+
+.amount {
+  font-weight: 700;
+  color: var(--accent-orange);
+}
+
+.period {
+  font-size: 0.5em;
+  color: var(--text-light);
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 32px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.plan-features li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.plan-features li:last-child {
+  border-bottom: none;
+}
+
+.checkmark {
+  color: var(--primary-green);
+  font-weight: 700;
+  min-width: 20px;
+}
+
+.card-featured h3 {
+  color: white;
+}
+
+.card-featured .plan-description {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card-featured .plan-price {
+  color: var(--white);
+}
+
+.card-featured .amount {
+  color: white;
+}
+
+.card-featured .period {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-featured .plan-features {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card-featured .plan-features li {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-featured .checkmark {
+  color: var(--secondary-green);
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .plans-header {
+    margin-bottom: 40px;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .plan-card {
+    padding: 24px;
+  }
+
+  .plan-card h3 {
+    font-size: 1.4em;
+  }
+
+  .plan-price {
+    margin-bottom: 24px;
+    font-size: 2em;
+  }
+
+  .card-featured {
+    transform: scale(1) !important;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .plan-card {
+    padding: 16px;
+  }
+
+  .plan-card h3 {
+    font-size: 1.2em;
+  }
+
+  .plan-price {
+    font-size: 1.6em;
+  }
+
+  .plan-features li {
+    padding: 8px 0;
+    font-size: 0.9em;
+  }
+}

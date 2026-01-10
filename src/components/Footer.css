@@ -1,0 +1,158 @@
+.footer {
+  background: linear-gradient(135deg, var(--primary-green), var(--dark-gray));
+  color: var(--white);
+  padding: 60px 0 max(20px, env(safe-area-inset-bottom));
+  margin-top: 0px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: var(--secondary-green);
+  margin-bottom: 16px;
+  font-size: 1.4em;
+}
+
+.footer-section h4 {
+  color: var(--secondary-green);
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+.footer-section p {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 8px 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--secondary-green);
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  padding: 6px 3px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--secondary-green);
+  color: var(--white);
+  border-color: var(--secondary-green);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+    margin-top: 60px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2em;
+  }
+
+  .footer-section h4 {
+    font-size: 1em;
+  }
+
+  .footer-section p {
+    font-size: 0.9em;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-links a {
+    padding: 6px 10px;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 0 16px;
+    margin-top: 40px;
+  }
+
+  .footer-content {
+    gap: 24px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.1em;
+  }
+
+  .footer-section h4 {
+    font-size: 0.95em;
+  }
+
+  .footer-section p {
+    font-size: 0.85em;
+    margin: 6px 0;
+  }
+
+  .footer-section ul li {
+    margin: 6px 0;
+  }
+
+  .footer-section a {
+    font-size: 0.85em;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+
+  .social-links a {
+    padding: 5px 8px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8em;
+  }
+}
