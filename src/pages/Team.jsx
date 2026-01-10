@@ -1,6 +1,11 @@
 import './Team.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import Thomas from '/src/assets/team/Thomas.jpg'
+import Evelyn from '/src/assets/team/Evelyn.jpg'
+import Jonny from '/src/assets/team/Jonny.jpg'
+import Diana from '/src/assets/team/Diana.jpg'
+import Henrique from '/src/assets/team/Henrique.jpg'
 
 export default function Team() {
   const team = [
