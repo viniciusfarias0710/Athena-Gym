@@ -13,35 +13,35 @@ export default function Team() {
       name: 'Thomas Villar',
       role: 'Personal Trainer',
       specialty: 'Musculação e Hipertrofia',
-      image: '/src/assets/team/Thomas.jpg',
+      image: Thomas,
       social: { instagram: '#', facebook: '#' }
     },
     {
       name: 'Evelyn Silva',
       role: 'Instrutora',
       specialty: 'Aulas Coletivas',
-      image: '/src/assets/team/Evelyn.jpg',
+      image: Evelyn,
       social: { instagram: '#', facebook: '#' }
     },
     {
       name: 'Jonny Alves',
       role: 'Instrutor',
       specialty: 'CrossFit e Funcional',
-      image: '/src/assets/team/Jonny.jpg',
+      image: Jonny,
       social: { instagram: '#', facebook: '#' }
     },
     {
       name: 'Diana Costa',
       role: 'Instrutora',
       specialty: 'Yoga e Pilates',
-      image: '/src/assets/team/Diana.jpg',
+      image: Diana,
       social: { instagram: '#', facebook: '#' }
     },
     {
       name: 'Henrique Ramos',
       role: 'Instrutor',
       specialty: 'Boxe e Artes Marciais',
-      image: '/src/assets/team/Henrique.jpg',
+      image: Henrique,
       social: { instagram: '#', facebook: '#' }
     }
   ]
