@@ -1,4 +1,5 @@
 {
+  "homepage": "https://viniciusfarias0710.github.io/Athena-Gym/",
   "name": "athena-gym",
   "version": "1.0.0",
   "directories": {
@@ -8,6 +9,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +24,6 @@
   "bugs": {
     "url": "https://github.com/viniciusfarias0710/Athena-Gym/issues"
   },
-  "homepage": "https://github.com/viniciusfarias0710/Athena-Gym#readme",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.1",
@@ -29,6 +31,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.2",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "vite": "^7.3.1"
